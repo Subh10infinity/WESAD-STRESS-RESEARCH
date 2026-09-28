@@ -1,0 +1,55 @@
+STATISTICAL ANALYSIS OF SUBJECT-LEVEL LOSO F1
+============================================================
+Model: Random Forest
+Number of subjects: 15
+
+Statistical test:
+Wilcoxon signed-rank test for paired subject-level F1 scores.
+
+Multiple-comparison correction:
+Holm-Bonferroni correction across the three RF configuration comparisons.
+
+Effect size:
+Rank-biserial correlation.
+
+------------------------------------------------------------
+Comparison: C1_Heart_HRV vs C3_Heart_EDA
+Mean F1 difference: -0.0912
+Median F1 difference: -0.0338
+Wilcoxon statistic: 31.0000
+Raw p-value: 0.177114
+Holm-adjusted p-value: 0.177114
+Rank-biserial effect: -0.4095
+Configuration A higher: 6
+Configuration B higher: 8
+Equal: 1
+Significant after Holm: False
+------------------------------------------------------------
+Comparison: C1_Heart_HRV vs C4_Full
+Mean F1 difference: -0.1573
+Median F1 difference: -0.2170
+Wilcoxon statistic: 13.0000
+Raw p-value: 0.005371
+Holm-adjusted p-value: 0.016113
+Rank-biserial effect: -0.7833
+Configuration A higher: 4
+Configuration B higher: 11
+Equal: 0
+Significant after Holm: True
+------------------------------------------------------------
+Comparison: C3_Heart_EDA vs C4_Full
+Mean F1 difference: -0.0661
+Median F1 difference: -0.0390
+Wilcoxon statistic: 9.0000
+Raw p-value: 0.032854
+Holm-adjusted p-value: 0.065708
+Rank-biserial effect: -0.7273
+Configuration A higher: 2
+Configuration B higher: 9
+Equal: 4
+Significant after Holm: False
+
+============================================================
+Comparisons significant after Holm correction: 1/3
+
+The statistical analysis evaluates paired subject-level differences in F1-score for Random Forest under subject-independent LOSO validation. Results should be interpreted together with subject-level variability and the limited number of participants.

@@ -1,0 +1,187 @@
+STATISTICAL ANALYSIS OF SUBJECT-LEVEL LOSO F1
+=================================================================
+Number of subjects: 15
+Models: LR, SVM, RF, XGB
+Configurations: C1_Heart_HRV, C3_Heart_EDA, C4_Full
+
+Statistical test:
+Wilcoxon signed-rank test on paired subject-level F1 scores.
+
+Multiple-comparison correction:
+Holm-Bonferroni correction across all 12 model/configuration comparisons.
+
+Effect size:
+Rank-biserial correlation.
+
+-----------------------------------------------------------------
+Model: LR
+Comparison: C1_Heart_HRV vs C3_Heart_EDA
+Mean F1 difference: -0.1553
+Median F1 difference: -0.0421
+Wilcoxon statistic: 13.0000
+Raw p-value: 0.023130
+Holm-adjusted p-value: 0.208168
+Rank-biserial effect: -0.7143
+Configuration A higher: 3
+Configuration B higher: 10
+Equal: 2
+Significant after Holm: False
+
+-----------------------------------------------------------------
+Model: LR
+Comparison: C1_Heart_HRV vs C4_Full
+Mean F1 difference: -0.1410
+Median F1 difference: -0.0421
+Wilcoxon statistic: 25.0000
+Raw p-value: 0.084284
+Holm-adjusted p-value: 0.589987
+Rank-biserial effect: -0.5238
+Configuration A higher: 4
+Configuration B higher: 10
+Equal: 1
+Significant after Holm: False
+
+-----------------------------------------------------------------
+Model: LR
+Comparison: C3_Heart_EDA vs C4_Full
+Mean F1 difference: 0.0143
+Median F1 difference: 0.0000
+Wilcoxon statistic: 20.0000
+Raw p-value: 0.767097
+Holm-adjusted p-value: 1.000000
+Rank-biserial effect: 0.1111
+Configuration A higher: 5
+Configuration B higher: 4
+Equal: 6
+Significant after Holm: False
+
+-----------------------------------------------------------------
+Model: SVM
+Comparison: C1_Heart_HRV vs C3_Heart_EDA
+Mean F1 difference: -0.0892
+Median F1 difference: -0.1200
+Wilcoxon statistic: 28.0000
+Raw p-value: 0.124043
+Holm-adjusted p-value: 0.744257
+Rank-biserial effect: -0.4667
+Configuration A higher: 5
+Configuration B higher: 9
+Equal: 1
+Significant after Holm: False
+
+-----------------------------------------------------------------
+Model: SVM
+Comparison: C1_Heart_HRV vs C4_Full
+Mean F1 difference: -0.0532
+Median F1 difference: -0.1200
+Wilcoxon statistic: 39.0000
+Raw p-value: 0.396726
+Holm-adjusted p-value: 1.000000
+Rank-biserial effect: -0.2571
+Configuration A higher: 5
+Configuration B higher: 9
+Equal: 1
+Significant after Holm: False
+
+-----------------------------------------------------------------
+Model: SVM
+Comparison: C3_Heart_EDA vs C4_Full
+Mean F1 difference: 0.0360
+Median F1 difference: 0.0000
+Wilcoxon statistic: 31.0000
+Raw p-value: 0.858863
+Holm-adjusted p-value: 1.000000
+Rank-biserial effect: 0.0606
+Configuration A higher: 5
+Configuration B higher: 6
+Equal: 4
+Significant after Holm: False
+
+-----------------------------------------------------------------
+Model: RF
+Comparison: C1_Heart_HRV vs C3_Heart_EDA
+Mean F1 difference: -0.0912
+Median F1 difference: -0.0338
+Wilcoxon statistic: 31.0000
+Raw p-value: 0.177114
+Holm-adjusted p-value: 0.885570
+Rank-biserial effect: -0.4095
+Configuration A higher: 6
+Configuration B higher: 8
+Equal: 1
+Significant after Holm: False
+
+-----------------------------------------------------------------
+Model: RF
+Comparison: C1_Heart_HRV vs C4_Full
+Mean F1 difference: -0.1573
+Median F1 difference: -0.2170
+Wilcoxon statistic: 13.0000
+Raw p-value: 0.005371
+Holm-adjusted p-value: 0.064453
+Rank-biserial effect: -0.7833
+Configuration A higher: 4
+Configuration B higher: 11
+Equal: 0
+Significant after Holm: False
+
+-----------------------------------------------------------------
+Model: RF
+Comparison: C3_Heart_EDA vs C4_Full
+Mean F1 difference: -0.0661
+Median F1 difference: -0.0390
+Wilcoxon statistic: 9.0000
+Raw p-value: 0.032854
+Holm-adjusted p-value: 0.262834
+Rank-biserial effect: -0.7273
+Configuration A higher: 2
+Configuration B higher: 9
+Equal: 4
+Significant after Holm: False
+
+-----------------------------------------------------------------
+Model: XGB
+Comparison: C1_Heart_HRV vs C3_Heart_EDA
+Mean F1 difference: -0.1751
+Median F1 difference: -0.1587
+Wilcoxon statistic: 13.0000
+Raw p-value: 0.005371
+Holm-adjusted p-value: 0.064453
+Rank-biserial effect: -0.7833
+Configuration A higher: 3
+Configuration B higher: 12
+Equal: 0
+Significant after Holm: False
+
+-----------------------------------------------------------------
+Model: XGB
+Comparison: C1_Heart_HRV vs C4_Full
+Mean F1 difference: -0.1884
+Median F1 difference: -0.1538
+Wilcoxon statistic: 17.0000
+Raw p-value: 0.012451
+Holm-adjusted p-value: 0.124512
+Rank-biserial effect: -0.7167
+Configuration A higher: 2
+Configuration B higher: 13
+Equal: 0
+Significant after Holm: False
+
+-----------------------------------------------------------------
+Model: XGB
+Comparison: C3_Heart_EDA vs C4_Full
+Mean F1 difference: -0.0132
+Median F1 difference: 0.0000
+Wilcoxon statistic: 23.0000
+Raw p-value: 0.646462
+Holm-adjusted p-value: 1.000000
+Rank-biserial effect: -0.1636
+Configuration A higher: 3
+Configuration B higher: 7
+Equal: 5
+Significant after Holm: False
+
+=================================================================
+Comparisons significant after Holm correction: 0/12
+
+Interpretation should consider the paired subject-level design, the limited number of subjects (n=15), and substantial inter-subject variability.
